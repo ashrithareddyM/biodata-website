@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashritha | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">ASHRITHA</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">☾</button>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading project-heading">
+        <div>
+            <h1>My Projects</h1>
+            <p>Some of the projects I have worked on.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active-filter" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+    </div>
+
+    <section class="project-grid">
+
+        <article class="project-card" data-category="ai">
+
+            <div class="project-image">
+                <img src="images/lila.png.jpg" alt="Lila AI Travel Concierge">
+                <span>AI/ML</span>
+            </div>
+
+            <div class="project-content">
+                <h2>Lila AI Travel Concierge</h2>
+
+                <p>
+                    An AI travel assistant providing real-time information
+                    using RAG and LLM models.
+                </p>
+
+                <h4>Technologies</h4>
+                <p>Python, LangChain, OpenAI</p>
+
+                <div class="project-buttons">
+                 <a href="https://github.com/Manasa-Joshi24/AI_Travel_Concierge" target="_blank" class="project-btn">GitHub</a>
+                <a href="https://lila-ai-travel.vercel.app/" target="_blank" class="project-btn filled">Live Demo</a>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="project-card" data-category="ai">
+
+            <div class="project-image">
+                <img src="images/course.png.jpg" alt="CampusOS">
+                <span>Web</span>
+            </div>
+
+              <div class="project-content">
+                <h2>Course Scheduling </h2>
+                <p>
+                    A Course scheduling system - Topological Order 
+                </p>
+
+                <h4>Technologies</h4>
+                <p>Python,Flask ,Alogorithms ,Graph Thoery</p>
+
+                <div class="project-buttons">
+                <a href="https://github.com/ashrithareddyM/course-scheduling" target="_blank" class="project-btn">GitHub</a>
+                <a href="https://course-scheduling.onrender.com/" target="_blank" class="project-btn filled">Live Demo</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="ai">
+
+                <div class="project-image">
+                <img src="images/campusos.png.jpg" alt="CampusOS">
+                <span>Web</span>
+                </div>
+                 <div class="project-content">
+                <h2>CampusOS</h2>
+
+                <p>
+                    A platform connecting students for skill exchange,
+                    collaboration and career recommendations.
+                </p>
+
+                <h4>Technologies</h4>
+                <p>FastAPI, Flask, MySQL, JavaScript</p>
+
+                <div class="project-buttons">
+                 <a href="https://campusos-frontend-hjbtvzv8givdlrb3afg6uu.streamlit.app/#current-goal" target="_blank" class="project-btn filled">Live Demo</a>
+                </div>
+            </div>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+<footer>
+    <p>©  Ashritha.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

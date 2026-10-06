@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashritha | Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .resume-page{
+            width:90%;
+            max-width:1250px;
+            margin:45px auto 60px;
+        }
+
+        .resume-title{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+        }
+
+        .resume-title h1{
+            font-family:"Playfair Display",serif;
+            font-size:44px;
+            color:var(--dark);
+            margin-bottom:7px;
+        }
+
+        .resume-title p{
+            color:var(--muted);
+            font-size:15px;
+        }
+
+        .resume-download{
+            background:var(--dark);
+            color:white;
+            border:0;
+            padding:13px 20px;
+            border-radius:8px;
+            cursor:pointer;
+            font-weight:600;
+        }
+
+        .resume-layout{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:22px;
+        }
+
+        .resume-box{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:28px;
+        }
+
+        .resume-box h2{
+            font-family:"Playfair Display",serif;
+            color:var(--dark);
+            font-size:21px;
+            margin-bottom:23px;
+        }
+
+        .education-item{
+            border-left:2px solid var(--green);
+            padding-left:20px;
+            margin-bottom:25px;
+            position:relative;
+        }
+
+        .education-item:last-child{
+            margin-bottom:0;
+        }
+
+        .education-item::before{
+            content:"";
+            position:absolute;
+            width:9px;
+            height:9px;
+            background:var(--green);
+            border-radius:50%;
+            left:-5px;
+            top:5px;
+        }
+
+        .education-item h3{
+            font-size:15px;
+            margin-bottom:5px;
+        }
+
+        .education-item p{
+            color:var(--muted);
+            font-size:13px;
+            margin-bottom:5px;
+        }
+
+        .education-item span{
+            color:var(--muted);
+            font-size:12px;
+        }
+
+        .skill-box{
+            margin-bottom:19px;
+        }
+
+        .skill-name{
+            display:flex;
+            justify-content:space-between;
+            font-size:13px;
+            margin-bottom:7px;
+        }
+
+        .skill-track{
+            height:7px;
+            background:#dfe3dc;
+            border-radius:10px;
+            overflow:hidden;
+        }
+
+        .skill-fill{
+            height:100%;
+            background:var(--green);
+            border-radius:10px;
+        }
+
+        .certifications{
+            list-style:none;
+        }
+
+        .certifications li{
+            padding:10px 0;
+            border-bottom:1px solid var(--border);
+            font-size:14px;
+        }
+
+        .certifications li:last-child{
+            border-bottom:0;
+        }
+
+        .certifications li::before{
+            content:"●";
+            color:var(--green);
+            margin-right:10px;
+            font-size:9px;
+        }
+
+        .experience h3{
+            font-size:17px;
+            margin-bottom:6px;
+        }
+
+        .experience .company{
+            color:var(--green);
+            font-weight:600;
+            font-size:14px;
+            margin-bottom:5px;
+        }
+
+        .experience .year{
+            color:var(--muted);
+            font-size:12px;
+        }
+
+        .experience ul{
+            margin-top:18px;
+            padding-left:20px;
+        }
+
+        .experience li{
+            color:var(--muted);
+            font-size:13px;
+            margin-bottom:9px;
+        }
+
+        .career-box{
+            margin-top:22px;
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:28px;
+        }
+
+        .career-box h2{
+            font-family:"Playfair Display",serif;
+            color:var(--dark);
+            margin-bottom:12px;
+        }
+
+        .career-box p{
+            color:var(--muted);
+            line-height:1.7;
+            font-size:14px;
+        }
+
+        @media(max-width:800px){
+            .resume-layout{
+                grid-template-columns:1fr;
+            }
+
+            .resume-title{
+                align-items:flex-start;
+                flex-direction:column;
+                gap:20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">ASHRITHA</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">☾</button>
+</header>
+
+<main class="resume-page">
+
+    <div class="resume-title">
+        <div>
+            <h1>My Resume</h1>
+            <p>Education, skills, experience and more about my journey.</p>
+        </div>
+
+       <a href="resume/Madduru_Ashritha_Resume.pdf" download class="resume-download">
+    ↓ Download Resume
+</a>
+    </div>
+
+    <section class="resume-layout">
+
+        <div class="resume-box">
+            <h2>🎓 Education</h2>
+
+            <div class="education-item">
+                <h3>B.Tech in Computer Science and Engineering</h3>
+                <p>RV Institute of Technology & Management</p>
+                <span>2024 – 2028 Expected</span>
+            </div>
+
+            <div class="education-item">
+                <h3>12 (PCM)</h3>
+                <p>Edify </p>
+                <p>CBSE</p>
+                <span>2022 – 2024</span>
+            </div>
+
+            <div class="education-item">
+                <h3>Grade V-X </h3>
+                <p>RGM International School</p>
+                <p>Karnataka State Board</p>
+                <span>2016 – 2022</span>
+            </div>
+        </div>
+
+        <div class="resume-box">
+            <h2>⚙ Technical Skills</h2>
+
+            <div class="skill-box">
+                <div class="skill-name">
+                    <span>Python</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-fill" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">
+                    <span>Machine Learning</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-fill" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">
+                    <span>Agentic  AI</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">
+                    <span>DBMS</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-fill" style="width:75%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-box">
+            <h2>🏆 Certifications</h2>
+
+            <ul class="certifications">
+                <li>IBM AI Fundamentals</li>
+                <li>Generative AI by Google</li>
+                <li>Cisco Networking Basics</li>
+                <li>Microsoft EY-AI Passport</li>
+                <li>Oracle AI Foundations</li>
+                <li>Machine Learning A-Z</li>
+            </ul>
+        </div>
+
+        <div class="resume-box">
+            <h2>💼 Internship / Experience</h2>
+
+            <div class="experience">
+                <h3>AI/ML Project  Based Intern</h3>
+                <p class="company">Lila AI Travel Concierge</p>
+                <span class="year">2026</span>
+
+                <ul>
+                    <li>Worked with RAG and LLM-based systems.</li>
+                    <li>Explored LangChain and OpenAI technologies.</li>
+                    <li>Built an AI travel assistant for real-time information.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="career-box">
+        <h2>Career Objective</h2>
+        <p>
+            To build a strong career in AI, machine learning and software development
+            by applying my technical knowledge to real-world problems, continuously
+            learning emerging technologies and creating meaningful solutions.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© Ashritha.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

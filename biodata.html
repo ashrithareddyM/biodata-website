@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashritha | Bio-data</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .biodata-page{
+            width:90%;
+            max-width:1250px;
+            margin:45px auto 60px;
+        }
+
+        .biodata-title{
+            margin-bottom:30px;
+        }
+
+        .biodata-title h1{
+            font-family:"Playfair Display",serif;
+            font-size:44px;
+            color:var(--dark);
+            margin-bottom:7px;
+        }
+
+        .biodata-title p{
+            color:var(--muted);
+            font-size:15px;
+        }
+
+        .biodata-main{
+            display:grid;
+            grid-template-columns:300px 1fr;
+            gap:25px;
+        }
+
+        .photo-box{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:15px;
+            min-height:480px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .photo-box img{
+            width:100%;
+            height:450px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .personal-details{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            overflow:hidden;
+        }
+
+        .personal-details h2{
+            font-family:"Playfair Display",serif;
+            color:var(--dark);
+            font-size:22px;
+            padding:25px 25px 15px;
+        }
+
+        .detail{
+            display:grid;
+            grid-template-columns:45px 180px 1fr;
+            align-items:center;
+            min-height:50px;
+            padding:7px 25px;
+            border-bottom:1px solid var(--border);
+            font-size:13px;
+        }
+
+        .detail:last-child{
+            border-bottom:0;
+        }
+
+        .detail-icon{
+            color:var(--green);
+            font-size:18px;
+        }
+
+        .detail-label{
+            font-weight:600;
+        }
+
+        .detail-value{
+            color:var(--muted);
+        }
+
+        .bio-objective{
+            margin-top:25px;
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:30px;
+            display:flex;
+            gap:22px;
+            align-items:flex-start;
+        }
+
+        .objective-symbol{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:var(--light-green);
+            color:var(--green);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:24px;
+            flex-shrink:0;
+        }
+
+        .bio-objective h2{
+            font-family:"Playfair Display",serif;
+            color:var(--dark);
+            margin-bottom:10px;
+        }
+
+        .bio-objective p{
+            color:var(--muted);
+            line-height:1.7;
+            font-size:14px;
+        }
+
+        @media(max-width:800px){
+            .biodata-main{
+                grid-template-columns:1fr;
+            }
+
+            .photo-box{
+                min-height:auto;
+            }
+
+            .photo-box img{
+                height:400px;
+            }
+        }
+
+        @media(max-width:600px){
+            .detail{
+                grid-template-columns:35px 130px 1fr;
+                padding:8px 15px;
+                font-size:12px;
+            }
+
+            .bio-objective{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">ASHRITHA</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html" class="active">Bio-data</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">☾</button>
+</header>
+
+<main class="biodata-page">
+
+    <div class="biodata-title">
+        <h1>Bio-data</h1>
+        <p>Personal details and additional information about me.</p>
+    </div>
+
+    <section class="biodata-main">
+
+        <div class="photo-box">
+            <img src="images/profile.png.jpg" alt="Ashritha Profile">
+        </div>
+
+        <div class="personal-details">
+
+            <h2>Personal Details</h2>
+
+            <div class="detail">
+                <span class="detail-icon">♙</span>
+                <span class="detail-label">Name</span>
+                <span class="detail-value">Madduru Ashritha</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">▣</span>
+                <span class="detail-label">Date of Birth</span>
+                <span class="detail-value">10 March</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">⚥</span>
+                <span class="detail-label">Gender</span>
+                <span class="detail-value">Female</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">◎</span>
+                <span class="detail-label">Nationality</span>
+                <span class="detail-value">Indian</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">文</span>
+                <span class="detail-label">Languages Known</span>
+                <span class="detail-value">English, Kannada, French</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">⌖</span>
+                <span class="detail-label">Address</span>
+                <span class="detail-value">Bangalore, Karnataka, India</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">✉</span>
+                <span class="detail-label">Email</span>
+                <span class="detail-value">madduruashritha31@gmail.com</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">☎</span>
+                <span class="detail-label">Phone</span>
+                <span class="detail-value">+91 9059051400</span>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">♡</span>
+                <span class="detail-label">Hobbies</span>
+                <span class="detail-value">Reading, Travelling, Public Speaking, Exploring AI Tools</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bio-objective">
+
+        <div class="objective-symbol">◎</div>
+
+        <div>
+            <h2>Career Objective</h2>
+
+            <p>
+                To work in a challenging environment where I can utilize my
+                skills in AI/ML and software development, learn continuously
+                and contribute to meaningful projects.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>©  Ashritha.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
